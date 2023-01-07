@@ -59,7 +59,6 @@ async def discussionFunction():
     # if (new week) <
     if (date != data['date']):
 
-        print(date)
         data['date'] = date
         jsonDump(pData = data, pFile = f'{gDirectory}/data.json')
 
