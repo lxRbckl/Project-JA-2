@@ -43,7 +43,7 @@ async def conchCommand(ctx, arg):
 
     # decide choice <
     # output choice <
-    decision = choice(jsonLoad(pFile = '/setting.json')['conch'])
+    decision = choice(jsonLoad(pFile = f'{gDirectory}/setting.json')['conch'])
     await ctx.send(f':crystal_ball: **{decision}**', delete_after = 540)
 
     # >
